@@ -28,6 +28,11 @@ export class SecondaryPageComponent {
         this.bc.postMessage('Secondary screen is visible again');
       }
     });
+
+    window.onbeforeunload = () => {
+      this.bc.postMessage('Secondary screen is closed');
+      this.bc.close();
+    }
   }
 
   onButtonClicked() {
