@@ -1,1 +1,4 @@
-<button mat-flat-button>Send message to primary</button>
+<button mat-flat-button (click)="onButtonClicked()">Send message to primary</button>
+@for(message of messages$(); track $index) {
+<p>{{ message }}</p>
+}
