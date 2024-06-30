@@ -21,7 +21,7 @@ export class MainPageComponent {
       this.messages$.update(messages => [...messages, ev.data]);
     };
 
-    window.open('http://localhost:4200/secondary', '_blanck', 'scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no');
+    window.open('http://localhost:4200/secondary', '_blank', 'scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no');
   }
 
   onButtonClicked() {
